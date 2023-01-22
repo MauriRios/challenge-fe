@@ -1,0 +1,17 @@
+.row{
+    background-color: #f5f7f9;
+}
+.col-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-12{
+    margin-top: 20px;
+}
+
+@media (max-width: 992.98px) {
+    .col-left {
+    justify-content: space-evenly;
+    }
+}

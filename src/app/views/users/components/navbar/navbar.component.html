@@ -1,0 +1,68 @@
+<div class="container-fluid">
+    <div class="offcanvas-responsive">
+        <div class="d-lg-none">
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                <i class="fa-solid fa-bars"></i>
+            </button>      
+
+        </div>
+        <div class="offcanvas offcanvas-start" 
+                data-bs-backdrop="static" tabindex="-1" 
+                id="staticBackdrop" 
+                aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header">
+                <div class="logo-container">
+                    <img class="logo" 
+                    src="../../../../../assets/img/iulogobgt.png" 
+                    alt="logo">
+                    <strong>iuPayme</strong>
+                </div>
+                <button type="button" 
+                class="btn-close" 
+                data-bs-dismiss="offcanvas" 
+                aria-label="Close">
+                </button>
+            </div>
+            <div class="offcanvas-body">
+
+                <div class="account-btn " *ngFor="let button of buttonsAccount">
+                    <button class="btn" class="btn">
+                        <p class="items"> <i class="{{button.icon}}"></i> <span> {{button.name}} </span>
+                            <i class="fa-solid fa-arrow-right flecha "></i>
+                        </p>
+                    </button>
+                </div>
+            <hr>
+                <div class="user-btn" *ngFor="let button of buttonsUser">
+                    <button class="btn">
+                        <p class="items"> <i class="{{button.icon}}"></i> {{button.name}}
+                            <i class="fa-solid fa-arrow-right flecha "></i>
+                        </p>
+                    </button>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault" >Clear</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="icons">
+        <div class="button-position">
+            <button type="button" class="btn">
+                    <i class="fa-regular fa-bell"></i>
+                <span *ngIf="alertLength > 0" 
+                    class="alert-icon">
+                    <span>{{alertLength}}</span>
+                </span>
+            </button>
+        </div>
+        <div class="button-position">
+            <button class="btn" routerLink="/login">
+                <span>
+                    <i class="fa-regular fa-user"></i>
+                </span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="row contaimer-flex">
+    <div class="btn-container">
+        <div class="logo-container">
+            <img class="logo" 
+            src="../../../../../assets/img/iulogobgt.png" 
+            alt="logo">
+            <strong>iuPayme</strong>
+        </div>
+        <div class="account-btn " *ngFor="let button of buttonsAccount" >
+            <button class="btn" class="btn">
+                <p class="items"> <i class="{{button.icon}}"></i> <span> {{button.name}} </span>
+                    <i Class="fa-solid fa-arrow-right flecha"></i>
+                </p>
+            </button>
+        </div>
+        <hr>
+        <div class="user-btn" *ngFor="let button of buttonsUser">
+            <button class="btn">
+                <p class="items"><i class="{{button.icon}}"></i> {{button.name}}
+                    <i class="fa-solid fa-arrow-right flecha "></i>
+                </p>
+            </button>
+        </div>
+        <div class="form-check form-switch mt-5">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault" >Clear</label>
+        </div>
+    </div>
+</div>

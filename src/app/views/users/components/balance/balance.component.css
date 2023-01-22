@@ -1,0 +1,90 @@
+h5{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.card-container{
+    background-color: white;
+    border-radius: 5%;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.total-header{
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.total-body{
+    margin: 10% 0 10% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+.buttons-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.balance-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-dinamic{
+    display: inline-block;
+}
+
+.green-text {
+    color: #27b736;
+}
+.green-background {
+    background-color: #effbf5;
+}
+
+.red-text {
+    color: #ff246d;
+}
+.red-background{
+    background-color: #fff5fa;
+}
+
+.btn-withdraw{
+    background-color: #f3f3f4;
+    color: black;
+    border: none;
+    padding: 10px 30px 10px 30px;
+    border-radius: 24px;
+}
+.btn-withdraw:hover{
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    transition: all 0.3s ease-in-out;
+}
+.btn-withdraw:not(:hover){
+    transform: translate(0px, 0px);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.btn-deposit{
+    background-color:  #ff0b7f;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 30px 10px 30px;
+}
+.btn-deposit:hover{
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    transition: all 0.3s ease-in-out;
+}
+.btn-deposit:not(:hover){
+    transform: translate(0px, 0px);
+    transition: all 0.3s ease-in-out;
+}
+
+.total-balance{
+    font-size: 3rem;
+}
+

@@ -1,0 +1,29 @@
+
+<div class="container-flex ">
+    <div class="card-container" *ngFor="let card of cards" >
+        <div class="card container my-5" 
+        [ngClass]="{'backgroundColor1': card.amount > 5000,
+        'backgroundColor2' : card.amount <= 5000 }">
+            <div class="card-title">
+                <span>
+                    <i class="fa-solid fa-microchip"></i>
+                </span>
+                <span >
+                    <img class="logo" src="../../../../../assets/img/iulogobgt.png" alt="logo">
+                    <span> iuPayme</span>
+                </span>
+            </div>
+            <div class="card-number">
+                <p> {{card.number}} </p>
+            </div>
+            <div class="card-amount">
+                <span >
+                    <span class="amount">{{ card.amount | currency:'AR$':'symbol' }}  </span>
+                </span>
+                <span> 
+                    <i class="{{card.icon}}"></i> 
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

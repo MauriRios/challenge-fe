@@ -1,0 +1,43 @@
+.container-fluid{
+    background-color: white;
+    border-radius: 24px 24px 24px 24px;
+    width: 100%;
+    height: 100%;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+p{
+    margin: 0;
+}
+
+
+.custom-pagination a.page-link {
+    color: rgb(16, 16, 19);
+    border: none;
+}
+
+.custom-pagination a.page-link:hover {
+    color: white;
+    background-color: #202431;
+
+}
+
+.bg-dinamic{
+    display: inline-block;
+}
+
+.green-text {
+    color: #27b736;
+}
+.green-background {
+    background-color: #effbf5;
+}
+
+.red-text {
+    color: #ff246d;
+}
+.red-background{
+    background-color: #fff5fa;
+}

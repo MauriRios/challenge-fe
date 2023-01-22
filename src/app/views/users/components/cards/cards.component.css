@@ -1,0 +1,72 @@
+.container-flex{
+    background-color: white;
+    border-radius: 24px 24px 24px 24px;
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card{
+    height: 170px;
+}
+
+.card-title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;    
+}
+
+.card-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1.3rem, 20px, 2vw);
+    
+}
+
+.card-amount{
+    display: flex;
+    justify-content: space-between;   
+}
+.amount{
+    font-size: clamp(1.8rem, 20px, 2vw);
+}
+
+.card:hover{
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
+    transition: all 0.3s ease-in-out;
+}
+.card:not(:hover){
+    transform: translate(0px, 0px);
+    transition: all 0.3s ease-in-out;
+}
+
+.backgroundColor1{
+    color: white;
+    background-color: #131313;
+    opacity: 1;
+    background-size: 40px 40px;
+    background-image: repeating-linear-gradient(45deg, #988597 0, #988597 4px, #131313 0, #131313 50%);
+}
+
+.backgroundColor2{
+    background-color: #080838;
+    color: white;
+    opacity: 1;
+    background-image: radial-gradient( ellipse farthest-corner at 40px 40px , #ff0037, #ff0037 50%, #080838 50%);
+    background-size: 40px 40px;
+}
+
+i{
+    font-size: clamp(30px, 20px, 2vw);
+}

@@ -1,0 +1,61 @@
+<div class="container-fluid table-responsive">
+    <table class="table" >
+        <thead>
+        <tr>
+            <th scope="col">N°</th>
+            <th scope="col"><i class="fa-solid fa-up-down"></i></th>
+            <th scope="col">ID</th>
+            <th scope="col">Transfer Type</th>
+            <th scope="col">User</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Date</th>
+        </tr>
+        </thead>
+        <tbody >
+        <tr *ngFor="let transaction of transactions;  let i = index">
+            <th scope="row">{{i+1}}</th>
+            <td>
+                <div class="bg-dinamic m-1" 
+                    [ngClass]="{ 'green-background': transaction.transferType === 'Deposit', 'red-background': transaction.transferType !== 'Deposit' }">
+                    <span 
+                    [ngClass]="{ 'green-text': transaction.transferType === 'Deposit', 'red-text': transaction.transferType !== 'Deposit' }">
+                        <i [ngClass]="{'fa-solid': true, 'fa-arrow-trend-up': transaction.transferType === 'Deposit',
+                            'fa-arrow-trend-down': transaction.transferType !== 'Deposit'}">
+                        </i>
+                    </span>
+                </div>
+            </td>
+            <td>{{transaction.id}}</td>
+            <td>{{transaction.transferType}}</td>
+            <td>{{transaction.user}}</td>
+            <td>
+                <div class="bg-dinamic m-1" 
+                [ngClass]="{ 'green-background': transaction.transferType === 'Deposit', 'red-background': transaction.transferType !== 'Deposit' }">
+                    <p  [ngClass]="{ 'green-text': transaction.transferType === 'Deposit', 'red-text': transaction.transferType !== 'Deposit' }">                     
+                        {{ transaction.transferType === 'Deposit' ? '+' : '-' }} ${{transaction.amount}}
+                    </p>
+                </div>
+            </td>
+            <td>{{transaction.date | date:"dd/MM/yy"}}</td>
+
+        </tr>
+        </tbody>
+    </table>
+    <nav aria-label="Page navigation example" class="custom-pagination">
+        <ul class="pagination">
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true"><i class="fa-solid fa-left-long"></i></span>
+            </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true"><i class="fa-solid fa-right-long"></i></span>
+            </a>
+        </li>
+        </ul>
+    </nav>
+</div>

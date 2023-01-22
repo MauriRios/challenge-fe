@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+.logo{
+    height: 20px;
+    width: 40px;
+}
+
+body { 
+  height: 100%;
+}
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a  {
+  font-family: 'Roboto', sans-serif;
+}

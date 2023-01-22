@@ -1,0 +1,69 @@
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.btn-container{
+    height: 100vh;
+    background-color: white;
+    border-radius: 0px 24px 24px 0;
+    padding-top: 50px;
+    
+}
+.btn{
+    padding: 0;
+}
+.account-btn, .user-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-switch{
+    display: flex;
+    justify-content: center
+}
+.form-check-input{
+    margin-right: 10px;
+}
+
+p{
+    margin: 0;
+}
+
+button{
+    height: 100%;
+    width: 100%;
+}
+
+button:hover{
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    background-color: #1a242d;
+    transform: translate(10px, 0px);
+    transition: all 0.3s ease-in-out;
+
+}
+
+button:not(:hover){
+    padding: 15px;
+    border-radius: 10px;
+    transform: translate(0px, 0px);
+    transition: all 0.3s ease-in-out;
+}
+
+.items{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.flecha{
+    color: white;
+}
+
+

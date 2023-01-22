@@ -1,0 +1,56 @@
+<div class="card-container">
+<div class="balance-container">
+    <div class="total-header">
+    <h5>Total Balance</h5>
+
+    <div
+        class="bg-dinamic m-1"
+        [ngClass]="{
+        'green-background': isIncrease,
+        'red-background': !isIncrease
+        }"
+    >
+        <span [ngClass]="{ 'green-text': isIncrease, 'red-text': !isIncrease }">
+        <i
+            [ngClass]="{
+            'fa-solid': true,
+            'fa-arrow-trend-up': isIncrease,
+            'fa-arrow-trend-down': !isIncrease
+            }"
+        ></i>
+        $ {{ withdraw }}
+        </span>
+    </div>
+
+    <div
+        class="bg-dinamic m-1"
+        [ngClass]="{
+        'green-background': !isIncrease,
+        'red-background': isIncrease
+        }"
+    >
+        <span [ngClass]="{ 'green-text': !isIncrease, 'red-text': isIncrease }">
+        <i
+            [ngClass]="{
+            'fa-solid': true,
+            'fa-arrow-trend-up': !isIncrease,
+            'fa-arrow-trend-down': isIncrease
+            }"
+        ></i>
+        $ {{ deposit }}
+        </span>
+    </div>
+    </div>
+
+    <div class="total-body">
+    <span class="total-balance"
+        >{{ totalBalance | currency : "AR$" : "symbol" }}
+    </span>
+    </div>
+
+    <div class="buttons-footer">
+    <button type="button" class="btn-deposit">Deposit</button>
+    <button type="button" class="btn-withdraw">Withdraw</button>
+    </div>
+</div>
+</div>
